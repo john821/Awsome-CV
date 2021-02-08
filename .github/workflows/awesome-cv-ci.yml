@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: john821/Awsome-cv@0.0.1
+    - uses: olivierodo/awesome-cv-action@0.0.1
       env:
-        GITHUB_TOKEN: ${4cce1a1aa6123b2992779debeabccfc6ea1b256c}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         FILE_NAME: 'jonathan-boucher.tex'
